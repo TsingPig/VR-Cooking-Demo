@@ -105,7 +105,7 @@ public class NutritionScaleBehaviour : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         //Debug.Log("Object entered: " + other.name);
-        obj = other.GameObject();
+        obj = other.gameObject;
         
     }
 
