@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.79761875, g: 1.1109926, b: 1.7614745, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -207,6 +206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_TrackingType: 0
   m_UpdateType: 0
+  m_IgnoreTrackingState: 0
   m_PositionInput:
     m_UseReference: 0
     m_Action:
@@ -247,6 +247,18 @@ MonoBehaviour:
         m_Flags: 0
       m_Flags: 0
     m_Reference: {fileID: 0}
+  m_TrackingStateInput:
+    m_UseReference: 0
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 48b2986e-a716-4728-b13a-d087380b5012
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
   m_PositionAction:
     m_Name: 
     m_Type: 0
@@ -265,7 +277,6 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
-  m_HasMigratedActions: 1
 --- !u!81 &22448079
 AudioListener:
   m_ObjectHideFlags: 0
@@ -284,7 +295,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -528,6 +539,18 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 5101698808175986029, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
+  m_IsTrackedAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Is Tracked
+      m_Type: 1
+      m_ExpectedControlType: 
+      m_Id: a3ec78a8-4f6b-4f38-a8c4-33661646d641
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    m_Reference: {fileID: 0}
   m_TrackingStateAction:
     m_UseReference: 1
     m_Action:
@@ -619,6 +642,18 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: -5908353012961274365, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
+  m_UIScrollAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: UI Scroll
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: a07135b5-0a5a-43d4-8ad8-a6c05ce77c6f
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
   m_HapticDeviceAction:
     m_UseReference: 1
     m_Action:
@@ -645,6 +680,18 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: -5913262927076077117, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
+  m_DirectionalAnchorRotationAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Directional Anchor Rotation
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: 44258c8c-5ac7-4231-8d4b-ebc5f7e9fe97
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
   m_TranslateAnchorAction:
     m_UseReference: 1
     m_Action:
@@ -658,6 +705,30 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 875253871413052681, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
+  m_ScaleToggleAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Scale Toggle
+      m_Type: 1
+      m_ExpectedControlType: 
+      m_Id: c5d30926-c58c-4324-b579-457395ef7e1e
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  m_ScaleDeltaAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Scale Delta
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: 97d55793-b73b-4295-a0a5-9810974a7495
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
   m_ButtonPressPoint: 0.5
 --- !u!135 &212375637
 SphereCollider:
@@ -692,7 +763,9 @@ MonoBehaviour:
     m_Bits: 4294967295
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
+  m_DisableVisualsWhenBlockedInGroup: 1
   m_StartingSelectedInteractable: {fileID: 0}
+  m_StartingTargetFilter: {fileID: 0}
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -705,6 +778,8 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
   m_OnHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -720,6 +795,7 @@ MonoBehaviour:
   m_SelectActionTrigger: 0
   m_HideControllerOnSelect: 1
   m_AllowHoveredActivate: 0
+  m_TargetPriorityMode: 0
   m_PlayAudioClipOnSelectEntered: 0
   m_AudioClipForOnSelectEntered: {fileID: 0}
   m_PlayAudioClipOnSelectExited: 0
@@ -732,6 +808,7 @@ MonoBehaviour:
   m_AudioClipForOnHoverExited: {fileID: 0}
   m_PlayAudioClipOnHoverCanceled: 0
   m_AudioClipForOnHoverCanceled: {fileID: 0}
+  m_AllowHoverAudioWhileSelecting: 1
   m_PlayHapticsOnSelectEntered: 0
   m_HapticSelectEnterIntensity: 0
   m_HapticSelectEnterDuration: 0
@@ -750,6 +827,12 @@ MonoBehaviour:
   m_PlayHapticsOnHoverCanceled: 0
   m_HapticHoverCancelIntensity: 0
   m_HapticHoverCancelDuration: 0
+  m_AllowHoverHapticsWhileSelecting: 1
+  m_ImproveAccuracyWithSphereCollider: 0
+  m_PhysicsLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_PhysicsTriggerInteraction: 1
 --- !u!1 &213986648
 GameObject:
   m_ObjectHideFlags: 0
@@ -1148,6 +1231,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83e4e6cca11330d4088d729ab4fc9d9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
 --- !u!4 &460006451
 Transform:
   m_ObjectHideFlags: 0
@@ -1274,6 +1359,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -1343,6 +1429,7 @@ MonoBehaviour:
   m_DebounceTime: 0.5
   m_EnableTurnLeftRight: 1
   m_EnableTurnAround: 1
+  m_DelayTime: 0
   m_LeftHandSnapTurnAction:
     m_UseReference: 0
     m_Action:
@@ -1383,6 +1470,7 @@ MonoBehaviour:
   m_System: {fileID: 643064680}
   m_MoveSpeed: 1
   m_EnableStrafe: 1
+  m_EnableFly: 0
   m_UseGravity: 1
   m_GravityApplicationMode: 0
   m_ForwardSource: {fileID: 0}
@@ -1493,6 +1581,18 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 8248158260566104461, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
+  m_IsTrackedAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Is Tracked
+      m_Type: 1
+      m_ExpectedControlType: 
+      m_Id: 827d8400-785a-407f-84dc-3ea7a464fdae
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    m_Reference: {fileID: 0}
   m_TrackingStateAction:
     m_UseReference: 1
     m_Action:
@@ -1584,6 +1684,18 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 71106601250685021, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
+  m_UIScrollAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: UI Scroll
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: 52454662-7f7a-43f2-92e2-af3dea43d6ae
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
   m_HapticDeviceAction:
     m_UseReference: 1
     m_Action:
@@ -1610,6 +1722,18 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: -7363382999065477798, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
+  m_DirectionalAnchorRotationAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Directional Anchor Rotation
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: 69bf2cd2-f520-4532-beb6-6133519a3818
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
   m_TranslateAnchorAction:
     m_UseReference: 1
     m_Action:
@@ -1623,6 +1747,30 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 7779212132400271959, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
+  m_ScaleToggleAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Scale Toggle
+      m_Type: 1
+      m_ExpectedControlType: 
+      m_Id: 2acbb0d5-4770-4c69-b7af-eac2a9ce3d50
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  m_ScaleDeltaAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Scale Delta
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: 1d720cfb-866a-476d-a0a4-08441ef2f20e
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
   m_ButtonPressPoint: 0.5
 --- !u!135 &645866789
 SphereCollider:
@@ -1657,7 +1805,9 @@ MonoBehaviour:
     m_Bits: 4294967295
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
+  m_DisableVisualsWhenBlockedInGroup: 1
   m_StartingSelectedInteractable: {fileID: 0}
+  m_StartingTargetFilter: {fileID: 0}
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -1670,6 +1820,8 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
   m_OnHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -1685,6 +1837,7 @@ MonoBehaviour:
   m_SelectActionTrigger: 0
   m_HideControllerOnSelect: 1
   m_AllowHoveredActivate: 0
+  m_TargetPriorityMode: 0
   m_PlayAudioClipOnSelectEntered: 0
   m_AudioClipForOnSelectEntered: {fileID: 0}
   m_PlayAudioClipOnSelectExited: 0
@@ -1697,6 +1850,7 @@ MonoBehaviour:
   m_AudioClipForOnHoverExited: {fileID: 0}
   m_PlayAudioClipOnHoverCanceled: 0
   m_AudioClipForOnHoverCanceled: {fileID: 0}
+  m_AllowHoverAudioWhileSelecting: 1
   m_PlayHapticsOnSelectEntered: 0
   m_HapticSelectEnterIntensity: 0
   m_HapticSelectEnterDuration: 0
@@ -1715,6 +1869,12 @@ MonoBehaviour:
   m_PlayHapticsOnHoverCanceled: 0
   m_HapticHoverCancelIntensity: 0
   m_HapticHoverCancelDuration: 0
+  m_AllowHoverHapticsWhileSelecting: 1
+  m_ImproveAccuracyWithSphereCollider: 0
+  m_PhysicsLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_PhysicsTriggerInteraction: 1
 --- !u!1 &674611219
 GameObject:
   m_ObjectHideFlags: 0
@@ -3784,7 +3944,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!143 &1510977588
 CharacterController:
   m_ObjectHideFlags: 0

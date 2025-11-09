@@ -53,11 +53,11 @@ MonoBehaviour:
   m_Name: HandInteractionProfile Android
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: Hand Interaction Profile
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.handinteraction
+  openxrExtensionStrings: XR_EXT_hand_interaction
+  company: Unity
   priority: 0
   required: 0
 --- !u!114 &-7389440177703561159
@@ -114,11 +114,11 @@ MonoBehaviour:
   m_Name: MetaQuestTouchProControllerProfile Android
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: Meta Quest Touch Pro Controller Profile
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.metaquestpro
+  openxrExtensionStrings: XR_FB_touch_controller_pro
+  company: Unity
   priority: 0
   required: 0
 --- !u!114 &-6404763150483665031
@@ -196,11 +196,11 @@ MonoBehaviour:
   m_Name: MetaQuestTouchPlusControllerProfile Android
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: Meta Quest Touch Plus Controller Profile
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.metaquestplus
+  openxrExtensionStrings: XR_META_touch_controller_plus
+  company: Unity
   priority: 0
   required: 0
 --- !u!114 &-4625133165659374927
@@ -216,11 +216,11 @@ MonoBehaviour:
   m_Name: XrPerformanceSettingsFeature Android
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: XR Performance Settings
+  version: 1.0.0
+  featureIdInternal: com.unity.openxr.feature.extension.performance_settings
+  openxrExtensionStrings: XR_EXT_performance_settings
+  company: Unity
   priority: 0
   required: 0
 --- !u!114 &-4625119007302527153
@@ -278,24 +278,24 @@ MonoBehaviour:
   m_Name: Standalone
   m_EditorClassIdentifier: 
   features:
+  - {fileID: -1931057452706846953}
   - {fileID: 8696228482038967423}
+  - {fileID: 1048144115476157381}
   - {fileID: 1173840630629857287}
   - {fileID: -5590697931776456935}
   - {fileID: -954079300670689055}
-  - {fileID: -3185887789299790521}
-  - {fileID: 8465215966957138214}
-  - {fileID: -8263259575306898384}
-  - {fileID: 7591400593055934047}
-  - {fileID: -1931057452706846953}
-  - {fileID: 1048144115476157381}
   - {fileID: -6404763150483665031}
   - {fileID: -2901064838344752950}
+  - {fileID: -3185887789299790521}
+  - {fileID: 8465215966957138214}
   - {fileID: 4586532689914020722}
   - {fileID: 3933230124030376400}
   - {fileID: -7072330630765906570}
   - {fileID: -4625119007302527153}
+  - {fileID: -8263259575306898384}
   - {fileID: 1684135817980386249}
   - {fileID: 730788110691550387}
+  - {fileID: 7591400593055934047}
   m_renderMode: 1
   m_autoColorSubmissionMode: 1
   m_colorSubmissionModes:
@@ -316,11 +316,11 @@ MonoBehaviour:
   m_Name: HandCommonPosesInteraction Android
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: Hand Interaction Poses
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.handinteractionposes
+  openxrExtensionStrings: XR_EXT_hand_interaction
+  company: Unity
   priority: 0
   required: 0
 --- !u!114 &-3185887789299790521
@@ -396,11 +396,11 @@ MonoBehaviour:
   m_Name: MetaQuestFeature Android
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: Meta Quest Support
+  version: 1.0.0
+  featureIdInternal: com.unity.openxr.feature.metaquest
+  openxrExtensionStrings: XR_OCULUS_android_initialize_loader
+  company: Unity
   priority: 0
   required: 0
   targetDevices:
@@ -460,13 +460,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   features:
   - {fileID: -8515561246113973288}
+  - {fileID: 1346634208090128146}
   - {fileID: 8749361000463232229}
+  - {fileID: -3312512701476993155}
+  - {fileID: -7472739366301635387}
   - {fileID: 5146261176709987888}
+  - {fileID: -1319496498485052291}
+  - {fileID: -4662725434949825935}
+  - {fileID: -6414855660057837559}
   - {fileID: -7389440177703561159}
   - {fileID: 5737861651154320731}
   - {fileID: -4152664374938380362}
   - {fileID: 8949940359887370523}
+  - {fileID: 3207277498361895727}
   - {fileID: -6040436392714823519}
+  - {fileID: -4625133165659374927}
   m_renderMode: 1
   m_autoColorSubmissionMode: 1
   m_colorSubmissionModes:
@@ -563,11 +571,11 @@ MonoBehaviour:
   m_Name: DPadInteraction Android
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: D-Pad Binding
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.dpadinteraction
+  openxrExtensionStrings: XR_KHR_binding_modification XR_EXT_dpad_binding
+  company: Unity
   priority: 0
   required: 0
   forceThresholdLeft: 0.5
@@ -618,11 +626,11 @@ MonoBehaviour:
   m_Name: PalmPoseInteraction Android
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: Palm Pose
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.palmpose
+  openxrExtensionStrings: XR_EXT_palm_pose
+  company: Unity
   priority: 0
   required: 0
 --- !u!114 &3933230124030376400
